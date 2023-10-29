@@ -40,19 +40,27 @@ UTM — программное обеспечение виртуализации
 
 <img width="615" alt="image" src="https://github.com/estle/CloudTech/assets/52665965/387c6c28-f83c-4389-b220-6d3240bbe365">
 
+**openssh-server package**
+
 Для установки соединения будем удалённо подключаться к компютеру Б на компютере А через протокол ssh, предварительно скачав и запустив на Б и С пакет openssh командами 
 ```
 apt-get install openssh-server
 systemctl enable ssh --now
 ```
 
+**Создаем файл _message.txt_**
+
 На компютере Б в домашней директории создадим файл _message.txt_, в котором будет некоторая цитата от коровы ```fortune | cowsay```
 
 <img width="928" alt="image" src="https://github.com/estle/CloudTech/assets/52665965/dedc5ce7-17a8-420e-a756-0a2719bf5869">
 
+**Проверка соединения по ssh**
+
 Подключимся к компьютеру Б по ssh, чтобы убедиться в работоспособности подключения по ssh и в наличии созданного файла _message.txt_
 
 <img width="770" alt="image" src="https://github.com/estle/CloudTech/assets/52665965/7e6e3a5d-77f0-4e3c-b4a4-77dc7b0eb71b">
+
+**Копирование файла утилитой _scp_**
 
 Копируем файл с компютера Б на компьютер С утилитой _scp_, команда которой имеет следующий вид ```$ scp опции пользователь1@хост1:файл пользователь2@хост2:файл```
 
