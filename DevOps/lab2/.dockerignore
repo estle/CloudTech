@@ -1,0 +1,7 @@
+.git
+.cache
+
+*.md
+
+badDockerfile
+goodDockerfile
