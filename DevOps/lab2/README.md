@@ -16,9 +16,9 @@
 
 Для выполения лабораторной работы будет использоваться небольшая веб-страница, реализованная с помощью Flask в Python 3.
 
-### Bad practices
+### Bad practices in Dockerfile
 
- ```Dockerfile
+```badDockerfile
 # 1 bad practice
 FROM python
 
@@ -39,9 +39,9 @@ CMD ["python3", "app.py"]
 3. Использование только CMD (без определения ENTRYPOINT) позваоляет легко переопределять исполняемый файл. Так можно добавить желаемую команду в конце строки docker run.
 
 
-### Good practices
+### Good practices in Dockerfile
 
- ```Dockerfile
+ ```goodDockerfile
 FROM python:3.11-alpine
 
 COPY ./requirements.txt /app/requirements.txt
