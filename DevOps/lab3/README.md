@@ -6,7 +6,7 @@
 
 # Выполнение лабораторной работы
 
-Для загрузки в репозиторий взят проект на Flask из предыдущей лабораторной работы. Результат сборки будет выгружаться в репозиторий и на [hub.docker.com](https://hub.docker.com/).
+Для загрузки в репозиторий взят проект на Flask из предыдущей лабораторной работы. Сборка будет выполняться в репозитории [estle/dockerlab3](https://github.com/estle/dockerlab3). Результат сборки будет выгружаться на [hub.docker.com](https://hub.docker.com/).
 
 Прежде всего изучим документацию по CI/CD платформе GitHub Actions [docs.github.com](https://docs.github.com/ru/actions/learn-github-actions/understanding-github-actions)  
 
@@ -40,14 +40,14 @@ jobs:
         with:
           context: .
           push: true
-          tags: estle/CloudTech/DevOps/lab3:latest
+          tags: estle/dockerlab3:latest
 ```
 
 Добавляем в настройках репозитория секретные ключи доступа к DockerHub.
 
 
 
-Пушим файлы в репозиторий и проверяем наличие сборки образа на DockerHub.
+Пушим файлы в репозиторий и проверяем наличие сборки образа и выгрузки на DockerHub.
 
 
-
+На платформе DockerHub появился наш докер образ, значит цель лабораторной работы достигнута.
