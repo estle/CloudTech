@@ -14,9 +14,9 @@
 
 ### publish.yml
 
-Для начала создадим в репозитории проекта CloudTech/DevOps/lab3 файл .github/workflows/publish.yml
+Для начала создадим в репозитории проекта *CloudTech/DevOps/lab3* файл *.github/workflows/publish.yml*
 
-Добавим в файл publish.yml код автосборки докер образа и сохранения результата сборки на DockerHub.
+Добавим в файл *publish.yml* код автосборки докер образа и сохранения результата сборки на DockerHub:
 
 ```
 name: Docker Image CI
@@ -65,4 +65,4 @@ jobs:
 
 ### Итог
 
-DockerFile в репозитории успешно собрался, как мы видим из вкладки Actions/workflows. На платформе DockerHub появился dockerlab3:latest, значит докер образ успешно выгрузился.
+DockerFile в репозитории успешно собрался, как мы видим из вкладки *Actions/workflows*. На платформе DockerHub появился *dockerlab3:latest*, значит докер образ успешно выгрузился.
